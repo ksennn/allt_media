@@ -1,0 +1,98 @@
+*{
+  margin: 0; padding: 0;
+}
+
+body {
+  background-color: #1F1D1D;
+}
+
+h1, h2, p {
+  color: #FFFFFF;
+}
+
+.top_menu {
+   font-family: 'Playfair Display';
+   font-size: 18px;
+   font-style: italic;
+
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+
+   width: 100%;
+   height: 30px;
+
+   /* background: #eee;
+   border-bottom: 1px solid #ddd; */
+ }
+
+ .top_menu__logo {
+   margin-right: auto;
+   padding: 20px;
+ }
+
+ .top_menu a {
+   margin: 0 20px;
+   text-decoration: none;
+   color: black;
+ }
+
+ .top_menu a:hover {
+   color: #414141;
+ }
+
+
+ .header {
+   width: 100%;
+   height: 60px;
+   margin-bottom: 40px;
+   position: relative;
+   display: flex;
+   /* justify-content: flex-end;
+   align-items: center; */
+ }
+
+ .header_left {
+   position: relative;
+   margin-left: 30px;
+   margin-top: 20px;
+   width: 326px;
+   height: 44px;
+   background: white;
+   border-radius: 40px;
+   border: 0.5px solid black;
+ }
+ .logo {
+   position: relative;
+   top: 18%;
+   left: 6%;
+ }
+
+ .header_right {
+
+   position: relative;
+   margin-left: 300px;
+   margin-top: 20px;
+   width: 733px;
+   height: 44px;
+   background: white;
+   border-radius: 40px;
+   border: 0.5px solid black;
+
+   display: flex;
+   align-items: center;
+
+   font-family: 'Playfair Display';
+   font-size: 18px;
+   font-style: italic;
+ }
+
+ .header_right a {
+   margin: 0 30px;
+   text-decoration: none;
+   color: black;
+ }
+
+ .header_right a:hover {
+   color: #414141;
+ }
