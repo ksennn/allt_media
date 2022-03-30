@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Allt</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag Ckeditor.cdn_url %>
+  </head>
+
+
+
+  <body>
+
+
+  <%= react_component 'Tests' %>
+
+  <div class="header">
+    <div class="header_left">
+          <a class="logo" href="main">
+            <%= image_tag "logo.svg"%>
+          </a>
+    </div>
+    <div class="header_right">
+            <%= link_to "Блог", posts_path %>
+            <% if user_signed_in? %>
+              <%= link_to 'Профиль', current_user %>  <%= link_to 'Выйти', destroy_user_session_path, method: :delete %>
+            <% else %>
+              <%= link_to 'Войти', new_user_session_path %>  <%= link_to 'Регистрация', new_user_registration_path %>
+            <% end %>
+
+            <%= form_tag posts_path, :method => 'get' do %>
+              <p>
+                <%= text_field_tag :starts_with, params[:starts_with] %>
+                <%= submit_tag "Search", :name => nil %>
+              </p>
+            <% end %>
+    </div>
+  </div>
+
+
+  <div class="Wrapper">
+
+    <% if notice %>
+      <p class="notice"><%= notice %></p>
+      <% elsif alert %>
+      <p class="alert"><%= alert %></p>
+      <% end %>
+      <%= yield %>
+
+  </div>
+
+
+
+
+  </body>
+</html>
