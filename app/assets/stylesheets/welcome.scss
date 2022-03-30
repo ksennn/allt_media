@@ -1,0 +1,24 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.color {
+	&.red {
+		color: red; &::after {
+		background-image: image_url('cyan.png');
+		}
+	}
+	&.blue {
+		color: blue; &::after {
+		background-image: image_url('cyan.png');
+		}
+	}
+	&.cyan {
+		 color: cyan; &::after {
+		 background-image: image_url('cyan.png');
+		}
+	}
+	&::after {
+	 display: inline-block; content: ''; width: 50px; height: 50px; background-size: cover;
+	}
+}
