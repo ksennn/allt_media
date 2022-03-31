@@ -1,11 +1,30 @@
 <p id="notice"><%= notice %></p>
 
+
+
+<%= react_component 'A_Title'%>
+
 <h2>Все категории</h2>
 <% Category.all.each do |cat| %>
 	<%= link_to cat.name, posts_path(category: cat.name) %> <br>
 <% end %>
 
+
 <%= link_to 'Новая категория', new_category_path %>
+
+  <div class="post_preview_container">
+	  <% @posts.each do |post| %>
+	<div class="post_card">
+        <div class="post_img"> <%= image_tag(post.image.url, alt: 'Image')%></div>
+				<div class="post_description">
+					<%= post.author %>
+				  <h5><%= post.title %></h5>
+				  <%= post.category.name %>
+			  </div>
+
+	</div>
+  <% end %>
+</div>
 
 
 <table>
