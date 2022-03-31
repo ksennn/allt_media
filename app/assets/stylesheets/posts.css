@@ -1,0 +1,19 @@
+/* // Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/ */
+
+.title {
+    font-family: Inter;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 36px;
+    padding: 15px 7px;
+  }
+
+.post_card {
+  width: 100px;
+  height: 200px;
+  background-color: white;
+}
