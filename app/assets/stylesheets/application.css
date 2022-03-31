@@ -4,6 +4,7 @@
 
 body {
   background-color: #1F1D1D;
+  height: 2000px;
 }
 
 h1, h2, p {
@@ -11,9 +12,9 @@ h1, h2, p {
 }
 
 .top_menu {
-   font-family: 'Playfair Display';
+   font-family: 'Montserrat';
    font-size: 18px;
-   font-style: italic;
+   font-style: normal;
 
    display: flex;
    justify-content: flex-end;
@@ -82,9 +83,9 @@ h1, h2, p {
    display: flex;
    align-items: center;
 
-   font-family: 'Playfair Display';
+   font-family: 'Montserrat', sans-serif;
    font-size: 18px;
-   font-style: italic;
+   font-weight: 300;
  }
 
  .header_right a {
@@ -96,3 +97,30 @@ h1, h2, p {
  .header_right a:hover {
    color: #414141;
  }
+
+ .post_preview_container{
+   width: 1352px;
+   margin: 0 auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+ }
+
+ .post_card {
+   width: 445px;
+
+   background-color: white;
+ }
+
+
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.post_description {
+  width: 411px;
+  margin: 0 auto;
+
+}
