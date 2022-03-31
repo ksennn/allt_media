@@ -7,9 +7,9 @@ body {
   height: 2000px;
 }
 
-h1, h2, p {
+/* h1, h2, p {
   color: #FFFFFF;
-}
+} */
 
 .top_menu {
    font-family: 'Montserrat';
@@ -108,8 +108,6 @@ h1, h2, p {
 
  .post_card {
    width: 445px;
-
-   background-color: white;
  }
 
 
@@ -121,6 +119,24 @@ h5 {
 
 .post_description {
   width: 411px;
-  margin: 0 auto;
+  margin-left: 10px;
+  padding-top: 10px;
+}
 
+h6 {
+  font-family: 'PlayfairDisplay';
+  font-size: 12px;
+  font-style: italic;
+  font-weight: normal;
+  color: #626262;
+}
+
+.post_box {
+  background-color: #F0F0F0;
+  width: 100%;
+}
+
+.title_post {
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
