@@ -1,6 +1,6 @@
-import React from "react"
+import React from 'react';
 import PropTypes from "prop-types"
-import A_textblock from './A_textblock'
+import A_textblock from './A_Textblock.js'
 
 class Tests extends React.Component {
   render () {
