@@ -4,6 +4,9 @@
 
 <%= react_component 'A_Title'%>
 
+
+<div class="post_box">
+
 <h2>Все категории</h2>
 <% Category.all.each do |cat| %>
 	<%= link_to cat.name, posts_path(category: cat.name) %> <br>
@@ -17,9 +20,15 @@
 	<div class="post_card">
         <div class="post_img"> <%= image_tag(post.image.url, alt: 'Image')%></div>
 				<div class="post_description">
-					<%= post.author %>
-				  <h5><%= post.title %></h5>
-				  <%= post.category.name %>
+					<h6><%= post.author %></h6>
+				  <h5 class="title_post"><%= post.title %></h5>
+				  <div class=""><%= post.category.name %></div>
+
+          <%= post.likes.count %> <%= (post.likes.count) == 1 ? 'Лайк' : 'Лайков'%>
+					<%= post.comments.count %> <%= (post.comments.count) == 1 ? 'Коментарий' : 'Комментариев'%>
+          <div class="">
+          	<%= link_to 'Посмотреть', post %>
+					</div>
 			  </div>
 
 	</div>
@@ -65,3 +74,5 @@
 
 
 <%= link_to 'Новый пост', new_post_path %>
+
+</div>
