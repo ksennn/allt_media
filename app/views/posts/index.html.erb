@@ -12,11 +12,13 @@
 	<% Category.all.each do |cat| %>
 		<%= link_to cat.name, posts_path(category: cat.name) %> <br>
 	<% end %>
+
+	<%= link_to 'Новая категория', new_category_path %>
 </div>
 
 
 
-<%= link_to 'Новая категория', new_category_path %>
+
 
   <div class="post_preview_container">
 	  <% @posts.each do |post| %>
