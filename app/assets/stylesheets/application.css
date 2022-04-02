@@ -99,6 +99,7 @@ body {
  }
 
  .post_preview_container{
+   padding-top: 20px;
    width: 1352px;
    margin: 0 auto;
    display: flex;
@@ -132,11 +133,19 @@ h6 {
 }
 
 .post_box {
-  background-color: #F0F0F0;
+  background-color: #F4F3EF;
   width: 100%;
+  margin-top: 30px;
 }
 
 .title_post {
   padding-top: 5px;
   padding-bottom: 10px;
+}
+
+.category_all {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
